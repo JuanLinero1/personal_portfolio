@@ -8,6 +8,10 @@ I'm a passionate programmer specializing in creating _beautiful and intuitive_ u
 
 In this portfolio, you'll find examples of my work, including websites, applications, and other projects that showcase my expertise in front-end technologies such as **_HTML, SCSS, React, PHP, mySQL_**. Although that's just the beginning!.
 
+## Langages
+
+This portfolio is avaliable in english and spanish. All the content is written by me. Spanish is my native language and i'm fluent in english. I have assured that the translation are accurate and natural.
+
 ## About this portfolio
 
 This portfolio is more than just a showcase of my technical skills and experience. It's a reflection of my passion for programming and my commitment to building exceptional web applications and websites. My goal in creating this portfolio is to demonstrate my ability to design and develop user-friendly interfaces that are both aesthetically pleasing and highly functional.
