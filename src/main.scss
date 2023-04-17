@@ -1,0 +1,16 @@
+@use './styles/partials/_colors.scss'as color;
+@use './styles/partials/_fonts.scss'as font;
+
+@use './styles/modules/component/_header.scss';
+
+@use './styles/modules/pages/_home.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: color.$body-color;
+}

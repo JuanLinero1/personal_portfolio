@@ -1,0 +1,53 @@
+@use '../partials/colors.scss'as color;
+@use '../mixins/_dflex.scss'as flex;
+
+.active {
+  padding: 20px 0 !important;
+}
+
+.header {
+  width: 100%;
+  @include flex.dflex(space-around, center, 0);
+  padding: 40px 0;
+  background-color: color.$header-color;
+  position: fixed;
+  transition: ease .2s;
+
+  &-logo {
+    color: white;
+    font-family: "Montserrat";
+    font-size: 2rem;
+    padding: 5px 10px;
+    background-color: color.$title-background;
+    border-radius: 10px;
+  }
+
+  &__nav {
+    &--list {
+      @include flex.dflex(center, center, 10px);
+
+      a {
+        text-decoration: none !important;
+        background: color.$title-background;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: inset 5px 0 0 0 color.$red;
+        transition: ease 1s;
+        outline: none;
+      }
+
+      a:hover {
+        box-shadow: inset 140px 0px 0px 40px color.$red;
+      }
+
+      &-item {
+        @include flex.dflex(center, center, 10px);
+        width: 110px;
+        font-family: "Montserrat";
+        color: white;
+        font-size: 1.3rem;
+        list-style: none;
+      }
+    }
+  }
+}
