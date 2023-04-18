@@ -9,6 +9,8 @@
   color: white;
   font-size: 2rem;
   transition: ease .3s;
+  @include flex.dflex(center, center, 0px);
+  flex-flow: column nowrap;
 
   &__hero {
     height: 90vh;
@@ -18,7 +20,7 @@
   &__hero--info {
     &-title {
       font-size: 2.2rem;
-      
+
       &-name,
       &-position {
         color: color.$highlight-text;
@@ -31,38 +33,45 @@
       font-family: "Nunito Sans";
       display: inline-flex;
       margin: 50px 0 0 0px;
+
       .dynamic-text {
         line-height: 40px;
         height: 40px;
         overflow: hidden;
+
         li {
           color: color.$pastel-red;
           position: relative;
           top: 0;
-          animation: slide 4.5s steps(3) infinite; 
+          animation: slide 9s steps(3) infinite;
         }
-        li span{
+
+        li span {
           position: relative;
         }
+
         li span::after {
           content: "";
           position: absolute;
-          left: 0; 
+          left: 0;
           height: 100%;
           width: 100%;
 
           background-color: color.$body-color;
           border-left: 2px solid white;
-          animation: typing 1.5s steps(30) infinite; 
+          animation: typing 3s steps(30) infinite;
         }
-        @keyframes typing{
-          100%{
-            left: 100%;
-            margin: 0 -35px 0 35px; 
+
+        @keyframes typing {
+
+          40%,
+          60% {
+            left: calc(100% + 10px);
           }
         }
-        @keyframes slide{
-          100%{
+
+        @keyframes slide {
+          100% {
             top: -120px;
           }
         }
@@ -73,24 +82,47 @@
   &__hero-img {
     width: 50%;
   }
-}
 
+  &__presentation {
+    width: 80%;
+    text-align: center;
 
-.just-some-emotional-assistance {
-  position: fixed;
-  top: 200px;
-  left: 50px;
-  font-size: .7rem;
-  display: none
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ;
+    h2 {
+      margin: 0 0 20px 0;
+    }
+
+    &-title {
+      color: color.$highlight-text;
+    }
+
+    &-p {
+      font-size: 1.5rem;
+      text-align: left;
+      margin: 0 0 20px 0;
+
+      .highligh-text {
+        color: color.$pastel-red;
+      }
+    }
+  }
+
+  &__contact{
+    margin: 50px 0 200px 0; 
+    @include flex.dflex(center, center, 0);
+    flex-flow: column nowrap;
+
+    span{
+      color: color.$highlight-text;
+    }
+    &--list{
+      @include flex.dflex(center, center, 0px); 
+      gap: 20px;
+      margin: 30px 0 0 0;
+      &-item{
+        font-size: 2.4rem;
+        cursor: pointer;
+        color: color.$pastel-red;
+      }
+    }
+  }
 }
