@@ -2,8 +2,12 @@
 @use './styles/partials/_fonts.scss'as font;
 
 @use './styles/modules/components/_header.scss';
+@use './styles/modules/components/_footer.scss';
 
 @use './styles/modules/pages/_home.scss';
+@use './styles/modules/pages/_project.scss';
+@use './styles/modules/pages/_about.scss';
+@use './styles/modules/pages/_resume.scss';
 
 * {
   margin: 0;

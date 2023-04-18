@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -21,25 +22,25 @@ const Header = () => {
       <div className="header-logo">ALB</div>
       <nav className="header__nav">
         <ul className="header__nav--list">
-          <a href="#">
+          <a href="/">
             <li className="header__nav--list-item">
               <FontAwesomeIcon icon={faHouse} />
               Home
             </li>
           </a>
-          <a href="#">
+          <a href="/About">
             <li className="header__nav--list-item">
               <FontAwesomeIcon icon={faUser} />
               About
             </li>
           </a>
-          <a href="#">
+          <a href="/Project">
             <li className="header__nav--list-item">
               <FontAwesomeIcon icon={faFolder} />
               Project
             </li>
           </a>
-          <a href="#">
+          <a href="/Resume">
             <li className="header__nav--list-item">
               <FontAwesomeIcon icon={faFile} />
               Resume

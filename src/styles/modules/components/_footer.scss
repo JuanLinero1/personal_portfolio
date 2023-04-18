@@ -1,0 +1,19 @@
+@use '../../mixins/dflex'as flex;
+@use '../..//partials/colors' as color; 
+
+.footer {
+  @include flex.dflex(space-between, center, 30px);
+  padding: 10px 70px;
+  width: 100%;
+  position: absolute;
+  bottom: auto;
+  background-color: black;
+  z-index: 10;
+  background-color: color.$footer-color;
+  color: white;
+  font-size: 1.3rem;
+  &--list{
+    font-size: 2rem;
+    @include flex.dflex(center, center, 10px)
+  }
+}

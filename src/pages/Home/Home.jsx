@@ -1,4 +1,5 @@
 import React, { useCallback } from "react";
+import Footer from "../../components/Footer/Footer";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -141,10 +142,14 @@ const Home = () => {
         </h6>
         <ul className="home__contact--list">
           <li className="home__contact--list-item">
-            <a href="https://github.com/JuanLinero1"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://github.com/JuanLinero1">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
           </li>
           <li className="home__contact--list-item">
-            <a href="linkedin.com/in/juan-linero-99b714221"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="linkedin.com/in/juan-linero-99b714221">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
           </li>
         </ul>
       </div>

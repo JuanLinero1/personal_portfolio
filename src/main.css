@@ -40,7 +40,11 @@
   align-items: center;
   gap: 10px;
 }
-.header__nav--list a {
+.header__nav--list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   text-decoration: none !important;
   background: rgb(70, 50, 90);
   padding: 10px;
@@ -49,7 +53,7 @@
   transition: ease 1s;
   outline: none;
 }
-.header__nav--list a:hover {
+.header__nav--list li:hover {
   box-shadow: inset 140px 0px 0px 40px rgb(255, 0, 0);
 }
 .header__nav--list-item {
@@ -62,6 +66,30 @@
   color: white;
   font-size: 1.3rem;
   list-style: none;
+  padding: 10px 80px !important;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 70px;
+  width: 100%;
+  position: absolute;
+  bottom: auto;
+  background-color: black;
+  z-index: 10;
+  background-color: rgb(41, 35, 51);
+  color: white;
+  font-size: 1.3rem;
+}
+.footer--list {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .home {
@@ -76,6 +104,7 @@
   align-items: center;
   gap: 0px;
   flex-flow: column nowrap;
+  position: relative;
 }
 .home__hero {
   height: 90vh;
@@ -148,12 +177,13 @@
   font-size: 1.5rem;
   text-align: left;
   margin: 0 0 20px 0;
+  font-family: "Baskervville";
 }
 .home__presentation-p .highligh-text {
   color: #fc6d6d;
 }
 .home__contact {
-  margin: 50px 0 200px 0;
+  margin: 50px 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,7 +204,7 @@
 .home__contact--list-item {
   font-size: 2.4rem;
   cursor: pointer;
-  color: #fc6d6d;
+  color: #ed3b49;
 }
 
 * {

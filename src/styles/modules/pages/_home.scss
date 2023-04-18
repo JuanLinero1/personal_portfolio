@@ -11,6 +11,7 @@
   transition: ease .3s;
   @include flex.dflex(center, center, 0px);
   flex-flow: column nowrap;
+  position: relative;
 
   &__hero {
     height: 90vh;
@@ -99,6 +100,7 @@
       font-size: 1.5rem;
       text-align: left;
       margin: 0 0 20px 0;
+      font-family: "Baskervville";
 
       .highligh-text {
         color: color.$pastel-red;
@@ -107,7 +109,7 @@
   }
 
   &__contact{
-    margin: 50px 0 200px 0; 
+    margin: 50px 0 100px 0; 
     @include flex.dflex(center, center, 0);
     flex-flow: column nowrap;
 
@@ -121,7 +123,7 @@
       &-item{
         font-size: 2.4rem;
         cursor: pointer;
-        color: color.$pastel-red;
+        color: color.$highlight-text;
       }
     }
   }
