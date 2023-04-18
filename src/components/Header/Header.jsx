@@ -12,7 +12,7 @@ const Header = () => {
   const [headerClass, setHeaderClass] = useState(false);
 
   const changeCondition = () => {
-    window.scrollY > 150 ? setHeaderClass(true) : setHeaderClass(false);
+    window.scrollY > 50 ? setHeaderClass(true) : setHeaderClass(false);
   };
   window.addEventListener("scroll", changeCondition);
 
