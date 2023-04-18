@@ -1,74 +1,17 @@
-@font-face {
-  font-family: "montserrat";
-  src: url(../../public/assets/fonts/font-logo/static/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: "Baskervville";
-  src: url(../../public/assets/fonts/font-text/Baskervville-Regular.ttf);
-}
-@font-face {
-  font-family: "Nunito Sans";
-  src: url(../../public/assets/fonts/font-title/NunitoSans-Regular.ttf);
-}
-.active {
-  padding: 20px 0 !important;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 4 | @use './styles/modules/component/_header.scss';
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   main.scss 4:1  root stylesheet */
 
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 0;
-  padding: 40px 0;
-  background-color: rgb(45, 33, 68);
-  position: fixed;
-  transition: ease 0.2s;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @use './styles/modules/component/_header.scss';\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   main.scss 4:1  root stylesheet";
 }
-.header-logo {
-  color: white;
-  font-family: "Montserrat";
-  font-size: 2rem;
-  padding: 5px 10px;
-  background-color: rgb(70, 50, 90);
-  border-radius: 10px;
-}
-.header__nav--list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.header__nav--list a {
-  text-decoration: none !important;
-  background: rgb(70, 50, 90);
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: inset 5px 0 0 0 rgb(255, 0, 0);
-  transition: ease 1s;
-  outline: none;
-}
-.header__nav--list a:hover {
-  box-shadow: inset 140px 0px 0px 40px rgb(255, 0, 0);
-}
-.header__nav--list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 110px;
-  font-family: "Montserrat";
-  color: white;
-  font-size: 1.3rem;
-  list-style: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: rgb(27, 8, 52);
-}/*# sourceMappingURL=main.css.map */
