@@ -1,7 +1,7 @@
 @use './styles/partials/_colors.scss'as color;
 @use './styles/partials/_fonts.scss'as font;
 
-@use './styles/modules/component/_header.scss';
+@use './styles/modules/components/_header.scss';
 
 @use './styles/modules/pages/_home.scss';
 
@@ -10,7 +10,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  background-color: color.$body-color;
+a{
+  text-decoration: none;
+  color: inherit;
+}
+li{
+  list-style: none;
 }

@@ -1,8 +1,8 @@
-@use '../partials/colors.scss'as color;
-@use '../mixins/_dflex.scss'as flex;
+@use '../../partials/_colors.scss'as color;
+@use '../../mixins/_dflex.scss'as flex;
 
 .active {
-  padding: 20px 0 !important;
+  padding: 10px 0 !important;
 }
 
 .header {
@@ -12,6 +12,7 @@
   background-color: color.$header-color;
   position: fixed;
   transition: ease .2s;
+  z-index: 2;
 
   &-logo {
     color: white;
