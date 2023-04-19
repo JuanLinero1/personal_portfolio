@@ -1,5 +1,4 @@
 import React from "react";
-import AutomaticSlider from "../../components/slider/AutomaticSlider";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 const About = () => {
@@ -7,7 +6,6 @@ const About = () => {
     <div className="about">
       <div className="about__hero">
         <div className="about__hero--slider">
-          <AutomaticSlider />
         </div>
         <div className="about__hero--info">
           <h2 className="about__hero--info-hg">About Me</h2>

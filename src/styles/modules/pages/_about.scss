@@ -23,20 +23,24 @@
     &--info {
       width: 60%;
       @include mixin.fonts(1.6rem, "Baskervville", white);
-      h2{
+
+      h2 {
         font-size: 3.5rem;
         @include mixin.fonts(3.5rem, "Montserrat", color.$highlight-text);
         text-align: center;
       }
-      br{
+
+      br {
         margin-bottom: 30px;
       }
-      &-hg{
+
+      &-hg {
         color: color.$highlight-text;
         @include mixin.fonts(1.7rem, "Nunito Sans", color.$highlight-text);
       }
-      li{
-        span{
+
+      li {
+        span {
           margin: 0 0 10px 0;
         }
       }
