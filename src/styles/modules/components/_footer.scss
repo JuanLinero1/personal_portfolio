@@ -1,8 +1,9 @@
-@use '../../mixins/dflex'as flex;
+@use '../../mixins/_mixins.scss'as mixin;
 @use '../..//partials/colors' as color; 
 
 .footer {
-  @include flex.dflex(space-between, center, 30px);
+  @include mixin.dflex(space-between, center, 30px);
+  @include mixin.fonts(1.3rem, "Montserrat", white);
   padding: 10px 70px;
   width: 100%;
   position: absolute;
@@ -10,10 +11,8 @@
   background-color: black;
   z-index: 10;
   background-color: color.$footer-color;
-  color: white;
-  font-size: 1.3rem;
   &--list{
+    @include mixin.dflex(center, center, 10px);
     font-size: 2rem;
-    @include flex.dflex(center, center, 10px)
   }
 }

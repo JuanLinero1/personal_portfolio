@@ -1,0 +1,45 @@
+@use '../../partials/_colors.scss'as color;
+@use '../../partials/_fonts.scss'as font;
+@use '../../mixins/_mixins.scss'as mixin;
+
+.about {
+  min-height: 100vh;
+  padding: 128px 0;
+  background-color: color.$body-color;
+
+  &__hero {
+    @include mixin.dflex(space-between, "", 30p);
+    padding: 50px 70px;
+
+    &--slider {
+      width: 25%;
+      height: 300px;
+      margin: 0 auto;
+      border: 2px solid lightgray;
+      position: sticky;
+      top: 120px;
+    }
+
+    &--info {
+      width: 60%;
+      @include mixin.fonts(1.6rem, "Baskervville", white);
+      h2{
+        font-size: 3.5rem;
+        @include mixin.fonts(3.5rem, "Montserrat", color.$highlight-text);
+        text-align: center;
+      }
+      br{
+        margin-bottom: 30px;
+      }
+      &-hg{
+        color: color.$highlight-text;
+        @include mixin.fonts(1.7rem, "Nunito Sans", color.$highlight-text);
+      }
+      li{
+        span{
+          margin: 0 0 10px 0;
+        }
+      }
+    }
+  }
+}

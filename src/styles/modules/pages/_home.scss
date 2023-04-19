@@ -1,21 +1,22 @@
 @use '../../partials/_colors.scss'as color;
-@use '../../mixins/_dflex.scss'as flex;
 @use '../../partials/_fonts.scss'as font;
+@use '../../mixins/_mixins.scss'as mixin;
 
 .home {
+  @include mixin.dflex(center, center, 0px);
+  @include mixin.fonts(2rem, inherit, white);
   background: color.$body-color;
   width: 100%;
   padding: 130px 0 0 0;
   color: white;
   font-size: 2rem;
   transition: ease .3s;
-  @include flex.dflex(center, center, 0px);
   flex-flow: column nowrap;
   position: relative;
 
   &__hero {
     height: 90vh;
-    @include flex.dflex(center, center, 0px)
+    @include mixin.dflex(center, center, 0px)
   }
 
   &__hero--info {
@@ -24,9 +25,7 @@
 
       &-name,
       &-position {
-        color: color.$highlight-text;
-        font-size: 2.5rem;
-        font-family: "Nunito Sans";
+        @include mixin.fonts(2.5rem, "Nunito Sans", color.$highlight-text);
       }
     }
 
@@ -97,10 +96,9 @@
     }
 
     &-p {
-      font-size: 1.5rem;
+      @include mixin.fonts(1.5rem, "Baskervville", white);
       text-align: left;
       margin: 0 0 20px 0;
-      font-family: "Baskervville";
 
       .highligh-text {
         color: color.$pastel-red;
@@ -108,22 +106,22 @@
     }
   }
 
-  &__contact{
-    margin: 50px 0 100px 0; 
-    @include flex.dflex(center, center, 0);
+  &__contact {
+    @include mixin.dflex(center, center, 0);
+    margin: 50px 0 100px 0;
     flex-flow: column nowrap;
 
-    span{
+    span {
       color: color.$highlight-text;
     }
-    &--list{
-      @include flex.dflex(center, center, 0px); 
-      gap: 20px;
+
+    &--list {
+      @include mixin.dflex(center, center, 20px);
       margin: 30px 0 0 0;
-      &-item{
-        font-size: 2.4rem;
+
+      &-item {
+        @include mixin.fonts(2.4rem, inherit, color.$highlight-text);
         cursor: pointer;
-        color: color.$highlight-text;
       }
     }
   }

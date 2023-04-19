@@ -1,7 +1,12 @@
-
 @mixin dflex($justify, $align, $gap) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
   gap: $gap;
+}
+
+@mixin fonts($size, $family, $color){
+  font-size: $size;
+  font-family: $family;
+  color: $color;
 }

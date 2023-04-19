@@ -27,6 +27,9 @@
   z-index: 2;
 }
 .header-logo {
+  font-size: 2rem;
+  font-family: "Montserrat";
+  color: white;
   color: white;
   font-family: "Montserrat";
   font-size: 2rem;
@@ -61,10 +64,10 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 110px;
+  font-size: 1.3rem;
   font-family: "Montserrat";
   color: white;
-  font-size: 1.3rem;
+  width: 110px;
   list-style: none;
   padding: 10px 80px !important;
 }
@@ -74,6 +77,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  font-size: 1.3rem;
+  font-family: "Montserrat";
+  color: white;
   padding: 10px 70px;
   width: 100%;
   position: absolute;
@@ -81,28 +87,29 @@
   background-color: black;
   z-index: 10;
   background-color: rgb(41, 35, 51);
-  color: white;
-  font-size: 1.3rem;
 }
 .footer--list {
-  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  font-size: 2rem;
 }
 
 .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  font-size: 2rem;
+  font-family: inherit;
+  color: white;
   background: #221f28;
   width: 100%;
   padding: 130px 0 0 0;
   color: white;
   font-size: 2rem;
   transition: ease 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0px;
   flex-flow: column nowrap;
   position: relative;
 }
@@ -117,9 +124,9 @@
   font-size: 2.2rem;
 }
 .home__hero--info-title-name, .home__hero--info-title-position {
-  color: #ed3b49;
   font-size: 2.5rem;
   font-family: "Nunito Sans";
+  color: #ed3b49;
 }
 .home__hero--info-text {
   font-family: "Nunito Sans";
@@ -175,19 +182,20 @@
 }
 .home__presentation-p {
   font-size: 1.5rem;
+  font-family: "Baskervville";
+  color: white;
   text-align: left;
   margin: 0 0 20px 0;
-  font-family: "Baskervville";
 }
 .home__presentation-p .highligh-text {
   color: #fc6d6d;
 }
 .home__contact {
-  margin: 50px 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0;
+  margin: 50px 0 100px 0;
   flex-flow: column nowrap;
 }
 .home__contact span {
@@ -197,14 +205,60 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0px;
   gap: 20px;
   margin: 30px 0 0 0;
 }
 .home__contact--list-item {
   font-size: 2.4rem;
-  cursor: pointer;
+  font-family: inherit;
   color: #ed3b49;
+  cursor: pointer;
+}
+
+.about {
+  min-height: 100vh;
+  padding: 128px 0;
+  background-color: #221f28;
+}
+.about__hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: "";
+  gap: 30p;
+  padding: 50px 70px;
+}
+.about__hero--slider {
+  width: 25%;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid lightgray;
+  position: sticky;
+  top: 120px;
+}
+.about__hero--info {
+  width: 60%;
+  font-size: 1.6rem;
+  font-family: "Baskervville";
+  color: white;
+}
+.about__hero--info h2 {
+  font-size: 3.5rem;
+  font-size: 3.5rem;
+  font-family: "Montserrat";
+  color: #ed3b49;
+  text-align: center;
+}
+.about__hero--info br {
+  margin-bottom: 30px;
+}
+.about__hero--info-hg {
+  color: #ed3b49;
+  font-size: 1.7rem;
+  font-family: "Nunito Sans";
+  color: #ed3b49;
+}
+.about__hero--info li span {
+  margin: 0 0 10px 0;
 }
 
 * {
