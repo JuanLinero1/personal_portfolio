@@ -1,0 +1,27 @@
+@use '../../partials/_colors.scss'as color;
+@use '../../mixins/_mixins.scss'as mixin;
+
+
+.resume{
+  min-height: 100vh;
+  background-color: color.$body-color;
+  @include mixin.dflex(center, center, 30px); 
+  flex-flow: column nowrap;
+  padding: 182px 0 50px 0;
+
+  &-button{
+    background-color: color.$pastel-red;
+    @include mixin.fonts(1.6rem, "Montserrat", white); 
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 100ms ease;
+    &:hover{
+      transform: scale(1.03);
+    }
+    &:active{
+      transform: scale(.97);
+    }
+  }
+}
