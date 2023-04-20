@@ -140,12 +140,12 @@ const Home = () => {
         </h6>
         <ul className="home__contact--list">
           <li className="home__contact--list-item">
-            <a href="https://github.com/JuanLinero1">
+            <a target="_blank" href="https://github.com/JuanLinero1">
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </li>
           <li className="home__contact--list-item">
-            <a href="linkedin.com/in/juan-linero-99b714221">
+            <a target="_blank" href="https://www.linkedin.com/in/juan-linero-99b714221">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>

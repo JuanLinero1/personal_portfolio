@@ -2,6 +2,8 @@
 @use '../../partials/_fonts.scss'as font;
 @use '../../mixins/_mixins.scss'as mixin;
 
+$img_size: 150px;
+
 .about {
   min-height: 100vh;
   padding: 128px 0;
@@ -20,16 +22,20 @@
       top: 120px;
       background-repeat: no-repeat;
       overflow: hidden;
+      border-radius: 10px;
 
-      &-img{
+      &-img {
         width: 100%;
+        animation: sliderImg 30s linear infinite;
         height: 100%;
-        animation: sliderImg 100s infinite;
       }
     }
-    @keyframes sliderImg{
-      40%, 60%{
-        transform: translateY(-300%);
+
+    @keyframes sliderImg {
+
+      40%,
+      60% {
+        transform: translateY(calc(($img_size * 6) * -1))
       }
     }
 
@@ -56,6 +62,43 @@
         span {
           margin: 0 0 10px 0;
         }
+      }
+    }
+  }
+
+  &__skills {
+    @include mixin.dflex(center, center, 50px);
+    flex-flow: column nowrap;
+
+    h2 {
+      @include mixin.fonts(2.3rem, "Nunito Sans", color.$highlight-text);
+    }
+    &--container {
+      @include mixin.dflex(center, center, 20px);
+      flex-flow: row wrap;
+      width: 80%;
+
+      &-item {
+        background-color: color.$title-background;
+        padding: 20px;
+        transition: all 80ms ease;
+        border-radius: 5px;
+        opacity: .7;
+        margin: 10px 0;
+
+        color: white;
+        @include mixin.fonts(4rem, "", white);
+        @include mixin.dflex(center, center, 12px);
+        flex-flow: column nowrap;
+
+        &-title{
+          @include mixin.fonts(1rem, "", color.$pastel-red);
+        }
+      }
+      &-item:hover{
+        opacity: 1;
+        transform: scale(1.2);
+        border: 1px solid white;
       }
     }
   }

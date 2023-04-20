@@ -235,15 +235,16 @@
   top: 120px;
   background-repeat: no-repeat;
   overflow: hidden;
+  border-radius: 10px;
 }
 .about__hero--slider-img {
   width: 100%;
+  animation: sliderImg 30s linear infinite;
   height: 100%;
-  animation: sliderImg 100s infinite;
 }
 @keyframes sliderImg {
   40%, 60% {
-    transform: translateY(-300%);
+    transform: translateY(-900px);
   }
 }
 .about__hero--info {
@@ -270,6 +271,53 @@
 }
 .about__hero--info li span {
   margin: 0 0 10px 0;
+}
+.about__skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-flow: column nowrap;
+}
+.about__skills h2 {
+  font-size: 2.3rem;
+  font-family: "Nunito Sans";
+  color: #ed3b49;
+}
+.about__skills--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-flow: row wrap;
+  width: 80%;
+}
+.about__skills--container-item {
+  background-color: rgb(70, 50, 90);
+  padding: 20px;
+  transition: all 80ms ease;
+  border-radius: 5px;
+  opacity: 0.7;
+  margin: 10px 0;
+  color: white;
+  font-size: 4rem;
+  font-family: "";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-flow: column nowrap;
+}
+.about__skills--container-item-title {
+  font-size: 1rem;
+  font-family: "";
+  color: #fc6d6d;
+}
+.about__skills--container-item:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  border: 1px solid white;
 }
 
 * {
