@@ -214,6 +214,77 @@
   cursor: pointer;
 }
 
+.project {
+  min-height: 100vh;
+  background: #221f28;
+  color: white;
+  padding: 188px 0 60px 0;
+  flex-flow: column nowrap;
+}
+.project__hero-title {
+  font-size: 3rem;
+  font-family: "montserrat";
+  color: #ed3b49;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+.project__hero--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  flex-flow: column nowrap;
+}
+.project__hero--container {
+  width: 70%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-flow: column wrap;
+}
+.project__hero--container-img {
+  width: 60%;
+}
+.project__hero--container-img img {
+  width: 100%;
+}
+.project__hero--container-info {
+  position: relative;
+  left: -70px;
+}
+.project__hero--container-info-title {
+  font-size: 1.7rem;
+  font-family: "Nunito Sans";
+  color: #ed3b49;
+  text-align: right;
+  cursor: pointer;
+  margin: 0 0 20px 0;
+}
+.project__hero--container-info-paragraph {
+  font-size: 1.1rem;
+  font-family: "Baskervville";
+  color: white;
+  max-width: 500px;
+  padding: 17px;
+  background: rgb(70, 50, 90);
+}
+.project__hero--container-info-side-list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 0 0;
+  font-size: 1rem;
+  font-family: "Nunito Sans";
+  color: #fc6d6d;
+}
+
 .about {
   min-height: 100vh;
   padding: 128px 0;

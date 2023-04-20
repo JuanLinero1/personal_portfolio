@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import carouselSliderAbout from "../../../public/assets/images/carouselSliderAbout";
+import carouselSliderAbout from "../../../public/assets/images/carouselSliderAbout.js";
 
 const About = () => {
   return (
@@ -81,82 +81,84 @@ const About = () => {
         </div>
       </div>
       <div className="about__skills">
-        <h2>My Professional <span>SkillSet</span></h2>
+        <h2>
+          My Professional <span>SkillSet</span>
+        </h2>
         <div className="about__skills--container">
           <span className="about__skills--container-item">
-            <i class="devicon-babel-plain"></i>
+            <i className="devicon-babel-plain"></i>
             <h6 className="about__skills--container-item-title">babel</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-bash-plain"></i>
+            <i className="devicon-bash-plain"></i>
             <h6 className="about__skills--container-item-title">bash</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-bootstrap-plain"></i>
+            <i className="devicon-bootstrap-plain"></i>
             <h6 className="about__skills--container-item-title">bootstrap</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-css3-plain"></i>
+            <i className="devicon-css3-plain"></i>
             <h6 className="about__skills--container-item-title">css3</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-figma-plain"></i>
+            <i className="devicon-figma-plain"></i>
             <h6 className="about__skills--container-item-title">figma</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-filezilla-plain"></i>
+            <i className="devicon-filezilla-plain"></i>
             <h6 className="about__skills--container-item-title">filezilla</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-firebase-plain"></i>
+            <i className="devicon-firebase-plain"></i>
             <h6 className="about__skills--container-item-title">firebase</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-git-plain"></i>
+            <i className="devicon-git-plain"></i>
             <h6 className="about__skills--container-item-title">git</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-html5-plain"></i>
+            <i className="devicon-html5-plain"></i>
             <h6 className="about__skills--container-item-title">html5</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-javascript-plain"></i>
+            <i className="devicon-javascript-plain"></i>
             <h6 className="about__skills--container-item-title">javascript</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-jquery-plain"></i>
+            <i className="devicon-jquery-plain"></i>
             <h6 className="about__skills--container-item-title">jquery</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-linux-plain"></i>
+            <i className="devicon-linux-plain"></i>
             <h6 className="about__skills--container-item-title">linux</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-nodejs-plain"></i>
+            <i className="devicon-nodejs-plain"></i>
             <h6 className="about__skills--container-item-title">nodejs</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-npm-original-wordmark"></i>
+            <i className="devicon-npm-original-wordmark"></i>
             <h6 className="about__skills--container-item-title">npm</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-php-plain"></i>
+            <i className="devicon-php-plain"></i>
             <h6 className="about__skills--container-item-title">php</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-react-original"></i>
+            <i className="devicon-react-original"></i>
             <h6 className="about__skills--container-item-title">react</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-redux-original"></i>
+            <i className="devicon-redux-original"></i>
             <h6 className="about__skills--container-item-title">redux</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-sass-original"></i>
+            <i className="devicon-sass-original"></i>
             <h6 className="about__skills--container-item-title">sass</h6>
           </span>
           <span className="about__skills--container-item">
-            <i class="devicon-wordpress-plain"></i>
+            <i className="devicon-wordpress-plain"></i>
             <h6 className="about__skills--container-item-title">wordpress</h6>
           </span>
         </div>

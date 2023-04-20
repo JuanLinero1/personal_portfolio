@@ -1,3 +1,66 @@
 @use '../../partials/_colors.scss'as color;
 @use '../../partials/_fonts.scss'as font;
 @use '../../mixins/_mixins.scss'as mixin;
+
+.project {
+  min-height: 100vh;
+  background: color.$body-color;
+
+  color: white;
+  padding: 188px 0 60px 0;
+  flex-flow: column nowrap;
+
+  &__hero-title {
+    @include mixin.fonts(3rem, "montserrat", color.$highlight-text);
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
+
+  &__hero--wrapper {
+    width: 100%;
+    @include mixin.dflex(center, center, 70px);
+    flex-flow: column nowrap;
+  }
+
+  &__hero--container {
+    width: 70%;
+    height: 300px;
+    @include mixin.dflex(center, end, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-flow: column wrap;
+
+    &-img {
+      width: 60%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-info {
+      position: relative;
+      left: -70px;
+      &-title{
+        @include mixin.fonts(1.7rem, "Nunito Sans", color.$highlight-text);
+        text-align: right; 
+        cursor: pointer; 
+        margin: 0 0 20px 0
+      }
+
+      &-paragraph{
+        @include mixin.fonts(1.1rem, "Baskervville", white);
+        max-width: 500px;
+        padding: 17px;
+        background: color.$title-background;
+      }
+
+      &-side-list{
+        @include mixin.dflex(end, center, 10px); 
+        margin: 10px 0 0 0;
+        @include mixin.fonts(1rem, "Nunito Sans", color.$pastel-red); 
+      }
+    }
+  }
+}
