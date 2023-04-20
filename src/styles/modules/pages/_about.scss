@@ -8,7 +8,7 @@
   background-color: color.$body-color;
 
   &__hero {
-    @include mixin.dflex(space-between, "", 30p);
+    @include mixin.dflex(space-between, "", 30px);
     padding: 50px 70px;
 
     &--slider {
@@ -18,6 +18,19 @@
       border: 2px solid lightgray;
       position: sticky;
       top: 120px;
+      background-repeat: no-repeat;
+      overflow: hidden;
+
+      &-img{
+        width: 100%;
+        height: 100%;
+        animation: sliderImg 100s infinite;
+      }
+    }
+    @keyframes sliderImg{
+      40%, 60%{
+        transform: translateY(-300%);
+      }
     }
 
     &--info {

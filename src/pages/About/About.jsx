@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import carouselSliderAbout from '../../../public/assets/images/carouselSliderAbout'; 
+
 const About = () => {
+  const [currentState, setCurrentState] = useState(0)
+
+  useEffect(() => {
+    setTimeout(() => {
+      if(currentState === 3){
+        setCurrentState(0)
+      } else{
+        setCurrentState(currentState + 1)
+      } 
+    }, 4000);
+  })
+
   return (
     <div className="about">
       <div className="about__hero">
         <div className="about__hero--slider">
-        </div>
+          {
+            carouselSliderAbout.map((imageSlide, currentState) => {
+              console.log(imageSlide)
+              return <img className="about__hero--slider-img" src={imageSlide.url} alt={imageSlide} />
+            })
+          }
+        </div>  
         <div className="about__hero--info">
           <h2 className="about__hero--info-hg">About Me</h2>
           <br />
@@ -42,16 +62,28 @@ const About = () => {
             {" "}
             <li>
               {" "}
-              <span className="about__hero--info-hg"><FontAwesomeIcon icon={faStar} /></span> Play Videogames
+              <span className="about__hero--info-hg">
+                <FontAwesomeIcon icon={faStar} />
+              </span>{" "}
+              Play Videogames
             </li>
             <li>
-              <span className="about__hero--info-hg"><FontAwesomeIcon icon={faStar} /></span> Reading books
+              <span className="about__hero--info-hg">
+                <FontAwesomeIcon icon={faStar} />
+              </span>{" "}
+              Reading books
             </li>
             <li>
-              <span className="about__hero--info-hg"><FontAwesomeIcon icon={faStar} /></span> Working out at the gym
+              <span className="about__hero--info-hg">
+                <FontAwesomeIcon icon={faStar} />
+              </span>{" "}
+              Working out at the gym
             </li>
             <li>
-              <span className="about__hero--info-hg"><FontAwesomeIcon icon={faStar} /></span> Learning new languages
+              <span className="about__hero--info-hg">
+                <FontAwesomeIcon icon={faStar} />
+              </span>{" "}
+              Learning new languages
             </li>
           </ul>
         </div>

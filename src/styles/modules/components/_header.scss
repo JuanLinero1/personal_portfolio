@@ -16,7 +16,6 @@
 
   &-logo {
     @include mixin.fonts(2rem, "Montserrat", white);
-    color: white;
     font-family: "Montserrat";
     font-size: 2rem;
     padding: 5px 10px;

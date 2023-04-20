@@ -1,5 +1,4 @@
 import React, { useCallback } from "react";
-import Footer from "../../components/Footer/Footer";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,12 +6,11 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
     await loadFull(engine);
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    // await console.log(container)
   }, []);
 
   return (
