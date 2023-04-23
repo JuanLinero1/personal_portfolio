@@ -42,25 +42,95 @@
     &-info {
       position: relative;
       left: -70px;
-      &-title{
+
+      &-title {
         @include mixin.fonts(1.7rem, "Nunito Sans", color.$highlight-text);
-        text-align: right; 
-        cursor: pointer; 
+        text-align: right;
+        cursor: pointer;
         margin: 0 0 20px 0
       }
 
-      &-paragraph{
+      &-paragraph {
         @include mixin.fonts(1.1rem, "Baskervville", white);
         max-width: 500px;
         padding: 17px;
         background: color.$title-background;
       }
 
-      &-side-list{
-        @include mixin.dflex(end, center, 10px); 
+      &-side-list {
+        @include mixin.dflex(end, center, 10px);
         margin: 10px 0 0 0;
-        @include mixin.fonts(1rem, "Nunito Sans", color.$pastel-red); 
+        @include mixin.fonts(1rem, "Nunito Sans", color.$pastel-red);
       }
+    }
+  }
+
+  &__task {
+    @include mixin.dflex(center, center, 40px);
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 80px 0 0px 0;
+    padding: 30px 0;
+
+    &--wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+
+      &-card {
+        background-color: color.$title-background;
+        width: 350px;
+        padding: 30px;
+        position: relative;
+
+        &-icon {
+          @include mixin.fonts(3.5rem, "", color.$highlight-text);
+          position: absolute;
+          top: -30px;
+          right: -25px;
+        }
+
+        &-title {
+          @include mixin.fonts(2rem, "Nunito Sans", color.$pastel-red);
+          margin: 5px 0 10px 0;
+          position: relative;
+          background-color: transparent;
+          outline: none;
+          border: none;
+
+          &::before {
+            content: "";
+            background: white;
+            position: absolute;
+            bottom: -0px;
+            left: 0%;
+            right: 0%;
+            height: 2px;
+            transform: scaleX(0.1);
+            transition: all 1s ease;
+            animation: underline 1.5s infinite;
+          }
+
+          &:hover::before {
+            transform: scaleX(1) !important;
+          }
+        }
+
+        &-description {
+          @include mixin.fonts(1rem, "Baskervville", white)
+        }
+      }
+    }
+    &--load-button{
+      @include mixin.fonts(1.4rem, "montserrat", white);
+      background-color: color.$title-background;
+      font-weight: 700;
+      width: 80%;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px 0;
     }
   }
 }
