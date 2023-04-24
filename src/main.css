@@ -120,6 +120,9 @@
   gap: 0px;
 }
 .home__hero--info-title {
+  font-size: 1.6;
+  font-family: "Montserrat";
+  color: White;
   font-size: 2.2rem;
 }
 .home__hero--info-title-name, .home__hero--info-title-position {
@@ -128,9 +131,11 @@
   color: #ed3b49;
 }
 .home__hero--info-text {
-  font-family: "Nunito Sans";
   display: inline-flex;
   margin: 50px 0 0 0px;
+  font-size: 2.1rem;
+  font-family: "Nunito Sans";
+  color: inherit;
 }
 .home__hero--info-text .dynamic-text {
   line-height: 40px;
@@ -175,6 +180,9 @@
 }
 .home__presentation h2 {
   margin: 0 0 20px 0;
+  font-size: 1.6;
+  font-family: "Nunito Sans";
+  color: White;
 }
 .home__presentation-title {
   color: #ed3b49;
@@ -196,6 +204,9 @@
   gap: 0;
   margin: 50px 0 100px 0;
   flex-flow: column nowrap;
+  font-size: 2rem;
+  font-family: "Nunito Sans";
+  color: inherit;
 }
 .home__contact span {
   color: #ed3b49;
@@ -454,7 +465,7 @@
 }
 .about__skills--container-item-title {
   font-size: 1rem;
-  font-family: "";
+  font-family: "Nunito Sans";
   color: #fc6d6d;
 }
 .about__skills--container-item:hover {

@@ -21,6 +21,7 @@
 
   &__hero--info {
     &-title {
+        @include mixin.fonts(1.6, "Montserrat", White);
       font-size: 2.2rem;
 
       &-name,
@@ -30,9 +31,9 @@
     }
 
     &-text {
-      font-family: "Nunito Sans";
       display: inline-flex;
       margin: 50px 0 0 0px;
+      @include mixin.fonts(2.1rem, "Nunito Sans", inherit);
 
       .dynamic-text {
         line-height: 40px;
@@ -89,6 +90,7 @@
 
     h2 {
       margin: 0 0 20px 0;
+      @include mixin.fonts(1.6, "Nunito Sans", White)
     }
 
     &-title {
@@ -110,6 +112,7 @@
     @include mixin.dflex(center, center, 0);
     margin: 50px 0 100px 0;
     flex-flow: column nowrap;
+    @include mixin.fonts(2rem, "Nunito Sans", inherit);
 
     span {
       color: color.$highlight-text;

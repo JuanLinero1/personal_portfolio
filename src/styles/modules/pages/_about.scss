@@ -92,7 +92,7 @@ $img_size: 150px;
         flex-flow: column nowrap;
 
         &-title{
-          @include mixin.fonts(1rem, "", color.$pastel-red);
+          @include mixin.fonts(1rem, "Nunito Sans", color.$pastel-red);
         }
       }
       &-item:hover{
