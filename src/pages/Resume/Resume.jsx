@@ -13,7 +13,9 @@ const Resume = () => {
           Download <FontAwesomeIcon icon={faDownload} />{" "}
         </button>
       </a>
-      <embed src="../../../public/assets/images/CvBonnett.pdf" type="application/pdf" width="608px" height="857px"></embed>
+      <div className="resume__wrapper">
+        <iframe src="../../../public/assets/images/CvBonnett.pdf" type="application/pdf"></iframe>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -68,10 +68,10 @@ const Home = () => {
         <div className="home__hero--info">
           <h2 className="home__hero--info-title">
             Hi, my name is{" "}
-            <span className="home__hero--info-title-name">Juan Linero</span>
+            <span className="home__hero--info-title-hg">Juan Linero</span>
             <br />
             I'm a{" "}
-            <span className="home__hero--info-title-position">
+            <span className="home__hero--info-title-hg">
               Developer
             </span>{" "}
           </h2>
